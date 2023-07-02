@@ -1,0 +1,285 @@
+.wrapper {
+  width: 100%;
+  height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#1b3b8e, black);
+}
+
+.runAnimation{
+  animation-play-state: running !important;
+}
+
+.pauseAnimation{
+  animation-play-state: paused !important;
+}
+
+.orbitWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 32px;
+  max-width: 832px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+.orbits {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+}
+
+.zIndex100{
+  z-index: 100;
+}
+
+.orbit1 {
+  position: relative;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  border: 1px dashed white;
+}
+
+.orbit1 > div {
+  display: block;
+  position: absolute;
+  top: 436px;
+  left: 432px;
+  cursor: pointer;
+}
+.orbit1 > div > span {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.item1 {
+  animation: spin-right-elem 168s linear 0s infinite normal;
+}
+
+.image1 {
+  background-image: url(https://driffle.com/tiles/about/minecraft.png);
+}
+
+.item2 {
+  animation: spin-right-elem2 168s linear 0s infinite normal;
+}
+
+.image2 {
+  background-image: url(https://driffle.com/tiles/about/mortalkombat.png);
+}
+
+.item3 {
+  animation: spin-right-elem3 168s linear 0s infinite normal;
+}
+
+.image3 {
+  background-image: url(https://driffle.com/tiles/about/xbox.png);
+}
+
+
+.orbit2 {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 1px dashed white;
+}
+
+.orbit2 > div {
+  display: block;
+  position: absolute;
+  top: 336px;
+  left: 332px;
+  cursor: pointer;
+}
+.orbit2 > div > span {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+.item4 {
+  animation: spin-right-elem4 168s linear 0s infinite normal;
+}
+
+.image4 {
+  background-image: url(https://driffle.com/tiles/about/batman.png);
+}
+
+.item5 {
+  animation: spin-right-elem5 168s linear 0s infinite normal;
+}
+
+.image5 {
+  background-image: url(https://driffle.com/tiles/about/fifa.png);
+}
+
+.item6 {
+  animation: spin-right-elem6 168s linear 0s infinite normal;
+}
+
+.image6 {
+  background-image: url(https://driffle.com/tiles/about/spiderman.png);
+}
+
+
+.orbit3 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px dashed white;
+}
+
+.orbit3 > div {
+  display: block;
+  position: absolute;
+  top: 236px;
+  left: 232px;
+  cursor: pointer;
+}
+.orbit3 > div > span {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+.item7 {
+  animation: spin-right-elem7 168s linear 0s infinite normal;
+}
+
+.image7 {
+  background-image: url(https://driffle.com/tiles/about/gta.png);
+}
+
+.item8 {
+  animation: spin-right-elem8 168s linear 0s infinite normal;
+}
+
+.image8 {
+  background-image: url(https://driffle.com/tiles/about/steam.png);
+}
+
+
+
+
+
+
+
+@keyframes spin-right-elem {
+  0% {
+    transform: rotate(100deg) translateX(450px) rotate(-100deg);
+  }
+
+  100% {
+    transform: rotate(-260deg) translateX(450px) rotate(260deg);
+  }
+}
+
+@keyframes spin-right-elem2 {
+  0% {
+    transform: rotate(360deg) translateX(450px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg) translateX(450px) rotate(0deg);
+  }
+}
+
+@keyframes spin-right-elem3 {
+  0% {
+    transform: rotate(240deg) translateX(450px) rotate(-240deg);
+  }
+
+  100% {
+    transform: rotate(-120deg) translateX(450px) rotate(120deg);
+  }
+}
+
+
+@keyframes spin-right-elem4 {
+  0% {
+    transform: rotate(340deg) translateX(350px) rotate(-340deg);
+  }
+
+  100% {
+    transform: rotate(-20deg) translateX(350px) rotate(20deg);
+  }
+}
+
+@keyframes spin-right-elem5 {
+  0% {
+    transform: rotate(100deg) translateX(350px) rotate(-100deg);
+  }
+  100% {
+    transform: rotate(-260deg) translateX(350px) rotate(260deg);
+  }
+}
+
+@keyframes spin-right-elem6 {
+  0% {
+    transform: rotate(220deg) translateX(350px) rotate(-220deg);
+  }
+
+  100% {
+    transform: rotate(-140deg) translateX(350px) rotate(140deg);
+  }
+}
+
+
+@keyframes spin-right-elem7 {
+  0% {
+    transform: rotate(150deg) translateX(250px) rotate(-150deg);
+  }
+
+  100% {
+    transform: rotate(-210deg) translateX(250px) rotate(210deg);
+  }
+}
+
+@keyframes spin-right-elem8 {
+  0% {
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
+  }
+}
+
+
+
+/* media query */
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    display: none;
+  }
+}

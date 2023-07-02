@@ -1,0 +1,66 @@
+.mainDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   background-color: rgb(33, 33, 33);
+    border: 2px solid rgb(49, 47, 47);
+    padding: 12px 40px;
+    z-index: 100;
+    position: fixed;
+}
+
+.logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.buttonsDiv{
+    display: flex;
+    gap: 20px;
+}
+
+.signupBtn{
+    background-color:#416AFF 
+}
+
+
+.signupBtn:hover{
+    background-color:#305af1 
+}
+
+.loginBtn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cartPng{
+    cursor: pointer;
+    /* border: 2px solid white; */
+    width: 50px;
+}
+
+.responsiveDiv{
+    display: none;
+
+}
+.responsiveDiv img{
+    width: 35px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+ 
+  .responsiveDiv{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .buttonsDiv{
+    display: none;
+  }
+    }
